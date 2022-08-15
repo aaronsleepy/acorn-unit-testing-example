@@ -14,7 +14,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     testImplementation("org.assertj:assertj-core:3.3.0")
-
+    testImplementation("io.mockk:mockk:1.12.4")
 }
 
 tasks.test {
@@ -22,5 +22,5 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile>() {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
