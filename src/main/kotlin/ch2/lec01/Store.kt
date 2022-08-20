@@ -18,8 +18,8 @@ class Store(
     }
 
     fun addInventory(product: Product, quantity: Int) {
-        _inventory[product]?.plus(quantity)
-            ?: _inventory.put(product, quantity)
+        _inventory[product] = _inventory.getOrDefault(product, 0)
+            .plus(quantity)
     }
 
 }
