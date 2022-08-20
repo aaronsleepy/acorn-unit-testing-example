@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 
 class DeliveryServiceTest {
     @Test
-    fun isDeliveryValid_invalidDate_returnsFalse() {
+    fun delivery_with_a_past_date_is_invalid() {
         // given-Arrange
         val sut = DeliveryService()
         val pastDate = LocalDateTime.now().minusDays(1)
