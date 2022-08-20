@@ -15,6 +15,7 @@ dependencies {
     testImplementation(kotlin("test"))
     testImplementation("org.assertj:assertj-core:3.3.0")
     testImplementation("io.mockk:mockk:1.12.4")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.1")
 }
 
 tasks.test {
