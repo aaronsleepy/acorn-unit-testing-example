@@ -16,6 +16,12 @@ class BodyRenderer : IRenderer {
     }
 }
 
+class BoldRenderer : IRenderer {
+    override fun render(message: Message): String {
+        return "<b>${message.body}</b>"
+    }
+}
+
 class FooterRenderer : IRenderer {
     override fun render(message: Message): String {
         return "<b>${message.footer}</b>"

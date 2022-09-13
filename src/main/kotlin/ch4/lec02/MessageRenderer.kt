@@ -3,7 +3,7 @@ package ch4.lec02
 class MessageRenderer(
     private val _subRenderers: List<IRenderer> = listOf(
         HeaderRenderer(),
-        BodyRenderer(),
+        BoldRenderer(),
         FooterRenderer()
     )
 ): IRenderer {
