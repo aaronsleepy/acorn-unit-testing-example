@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.time.LocalDateTime
 
 /**
- * 매개변수화된 테스트를 위한 데이터 생성
+ * 예제 3.13 매개변수화된 테스트를 위한 데이터 생성
  */
 class DeliveryServiceTest {
     @ParameterizedTest

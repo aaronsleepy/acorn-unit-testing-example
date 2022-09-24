@@ -8,6 +8,9 @@ import org.junit.jupiter.params.provider.CsvSource
 import org.junit.jupiter.params.provider.ValueSource
 import java.time.LocalDateTime
 
+/**
+ * 예제 3.11 몇 가지 사실을 포괄하는 테스트
+ */
 class DeliveryServiceTest {
     @ParameterizedTest
     @CsvSource(

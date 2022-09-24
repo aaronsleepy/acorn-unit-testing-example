@@ -4,6 +4,9 @@ import org.assertj.core.api.AssertionsForInterfaceTypes.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+/**
+ * 예제 2.1 고전적인 스타일로 작성된 테스트
+ */
 class ClassicalCustomerTest {
     @Test
     @DisplayName("재고가 충분한 경우 구매는 정상 처리된다")

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 /**
- * 테스트 내 SUT 이름을 sut로 하라
+ * 예제 3.4 의존성과 SUT 구별하기
  */
 internal class CalculatorTest2 {
     @Test

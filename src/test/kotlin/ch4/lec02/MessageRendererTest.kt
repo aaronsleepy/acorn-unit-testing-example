@@ -4,6 +4,9 @@ import org.assertj.core.api.AssertionsForInterfaceTypes.assertThat
 import org.junit.jupiter.api.Test
 
 class MessageRendererTest {
+    /**
+     * 예제 4.2 MessageRenderer의 구조가 올바른지 확인
+     */
     @Test
     fun messageRenderer_uses_correct_sub_renderers() {
         // given-Arrange
@@ -19,6 +22,9 @@ class MessageRendererTest {
         assertThat(renderers[2] is FooterRenderer).isTrue
     }
 
+    /**
+     * 예제 4.4 MessageRenderer에서 생성하는 결과 검증
+     */
     @Test
     fun rendering_a_message() {
         // given-Arrange

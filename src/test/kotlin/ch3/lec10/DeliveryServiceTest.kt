@@ -5,8 +5,12 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import java.time.LocalDateTime
 
+/**
+ * 3.4.2 예제: 지침에 따른 테스트 이름 변경
+ */
 class DeliveryServiceTest {
     /**
+     * 예제 3.10 엄격한 정책으로 명명된 테스트
      * 모호한 테스트 이름
      */
     @Test

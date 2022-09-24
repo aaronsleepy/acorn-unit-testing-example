@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource
 import java.time.LocalDateTime
 
 /**
- * 긍정적인 시나리오와 부정적인 시나리오를 검증하는 두 가지 테스트
+ * 예제 3.12 긍정적인 시나리오와 부정적인 시나리오를 검증하는 두 가지 테스트
  * - Ref: https://www.baeldung.com/parameterized-tests-junit-5
  * - Ref: https://www.baeldung.com/kotlin/junit-5-kotlin
  */
