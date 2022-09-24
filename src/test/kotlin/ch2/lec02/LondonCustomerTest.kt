@@ -10,6 +10,9 @@ import org.assertj.core.api.AssertionsForInterfaceTypes.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+/**
+ * 예제 2.2 런던 스타일로 작성된 단위 테스트
+ */
 class LondonCustomerTest {
     @Test
     @DisplayName("재고가 충분한 경우 구매는 정상 처리된다")

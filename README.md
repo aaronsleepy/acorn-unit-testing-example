@@ -36,6 +36,11 @@
 | ---- | --------- |
 | - | `src/test/ch2/lec01/ClassicalCustomerTest.kt` |
 
+## 예제 2.2 런던 스타일로 작성된 단위 테스트
+| code | test code |
+| ---- | --------- |
+| - | `src/test/ch2/lec01/LondonCustomerTest.kt` |
+
 
 ## 3장 단위 테스트 구조
 
