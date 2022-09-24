@@ -13,17 +13,17 @@
 ### 예제 1.1 예제 메서드를 부분적으로 다루는 테스트
 | code | test code |
 | ---- | --------- |
-| `src/main/ch1/lec01/Lec01Ex1.kt` | `src/test/ch1/lec01/Lec01Ex1.kt` |
+| `src/main/ch1/lec01/Lec01Ex1.kt` | `src/test/ch1/lec01/Lec01Ex1Test.kt` |
 
 ### 예제 1.2 마지막 결과를 기록하는 isStringLong 버전
 | code | test code |
 | ---- | --------- |
-| `src/main/ch1/lec01/Lec01Ex2.kt` | `src/test/ch1/lec01/Lec01Ex2.kt` |
+| `src/main/ch1/lec01/Lec01Ex2.kt` | `src/test/ch1/lec01/Lec01Ex2Test.kt` |
 
 ### 예제 1.3 검증이 없는 테스트는 언제나 통과한다
 | code | test code |
 | ---- | --------- |
-| `src/main/ch1/lec01/Lec01Ex2.kt` | `src/test/ch1/lec01/Lec01Ex3.kt` |
+| `src/main/ch1/lec01/Lec01Ex2.kt` | `src/test/ch1/lec01/Lec01Ex3Test.kt` |
 
 
 ## 2장 단위 테스트란 무엇인가
