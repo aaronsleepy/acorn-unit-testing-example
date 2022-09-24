@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 /**
- * 3.3 테스트 간 테스트 픽스처 재사용
+ * 예제 3.8 비공개 팩토리 메서드로 도출한 공통 초기화 코드
  * - 더 나은 방법
  * - 비공개 팩토리 메서드를 사용하기
  */

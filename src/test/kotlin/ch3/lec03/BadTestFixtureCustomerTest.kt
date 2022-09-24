@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
 /**
- * 3.3 테스트 간 테스트 픽스처 재사용
+ * 예제 3.7 테스트 생성자에서 초기화 코드 추출
  * - 올바르지 않은 방법
  * - Test 생성자에서 테스트 픽스처를 초기화하는 방식
  */

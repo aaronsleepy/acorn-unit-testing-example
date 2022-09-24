@@ -4,6 +4,9 @@ import org.assertj.core.api.AssertionsForInterfaceTypes.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+/**
+ * 예제 3.1 calculator 내 Sum 메서드를 다루는 테스트
+ */
 internal class CalculatorTest {                     // 응집도 있는 테스트 세트를 위한 클래스 컨테이너
     @Test                                           // 테스트를 나타내는 annotation
     @DisplayName("두 Double 숫자의 합을 정상 처리한다")    // 테스트를 표현하는 대체 문구
