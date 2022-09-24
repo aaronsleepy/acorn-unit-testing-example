@@ -96,6 +96,15 @@
 | `src/main/ch3/lec01/Calculator.kt` | `src/test/ch3/lec14/CalculatorTest.kt` |
 
 ## 4장 좋은 단위 테스트의 4대 요소
+### 예제 4.1 메시지의 HTML 표현 생성
+* `Message.kt`
+* `IRenderer.kt`
+* `MessageRenderer.kt` 
 
+### 예제 4.2 MessageRenderer의 구조가 올바른지 확인
+| - | `src/test/ch4/lec02/MesseageRendererTest.kt` |
+
+### 예제 4.4 MessageRenderer에서 생성하는 결과 검증
+| - | `src/test/ch4/lec02/MesseageRendererTest.kt` |
 
 ## 5장 목과 테스트 취약성
