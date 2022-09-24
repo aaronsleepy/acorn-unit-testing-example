@@ -27,6 +27,14 @@
 
 
 ## 2장 단위 테스트란 무엇인가
+## 2장 관련 코드
+* `Customer.kt`
+* `Store.kt `
+
+### 예제 2.1 고전적인 스타일로 작성된 테스트
+| code | test code |
+| ---- | --------- |
+| - | `src/test/ch2/lec01/ClassicalCustomerTest.kt` |
 
 
 ## 3장 단위 테스트 구조
