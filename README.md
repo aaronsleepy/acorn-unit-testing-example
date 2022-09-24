@@ -43,7 +43,7 @@
 
 
 ## 3장 단위 테스트 구조
-## 3장 관련 코드
+### 3장 관련 코드
 * `Customer.kt`
 * `Store.kt `
 * `Calculator.kt`
@@ -102,9 +102,13 @@
 * `MessageRenderer.kt` 
 
 ### 예제 4.2 MessageRenderer의 구조가 올바른지 확인
+| code | test code |
+| ---- | --------- |
 | - | `src/test/ch4/lec02/MesseageRendererTest.kt` |
 
 ### 예제 4.4 MessageRenderer에서 생성하는 결과 검증
+| code | test code |
+| ---- | --------- |
 | - | `src/test/ch4/lec02/MesseageRendererTest.kt` |
 
 ## 5장 목과 테스트 취약성
