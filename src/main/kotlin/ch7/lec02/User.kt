@@ -1,9 +1,9 @@
 package ch7.lec02
 
 class User(
-    var userId: Int,
-    var email: String,
-    var type: UserType,
+    var userId: Int = 0,
+    var email: String = "",
+    var type: UserType = UserType.EMPLOYEE,
 ) {
     fun changeEmail(targetUserId: Int, newEmail: String) {
         // 데이터베이스에서 사용자의 현재 이메일과 유형 검색
