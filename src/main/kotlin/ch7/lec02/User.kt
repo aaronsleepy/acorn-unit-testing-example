@@ -9,8 +9,8 @@ class User(
         // 데이터베이스에서 사용자의 현재 이메일과 유형 검색
         val data = Database.getUserById(userId)
         userId = targetUserId
-        email = data?.get(0) as String
-        type = data?.get(1) as UserType
+        email = data?.get(1) as String
+        type = data?.get(2) as UserType
 
         if (email == newEmail) {
             return

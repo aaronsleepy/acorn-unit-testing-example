@@ -9,8 +9,8 @@ class UserController(
     ) {
     fun changeEmail(userId: Int, newEmail: String) {
         val data = _database.getUserById(userId)
-        val email = data?.get(0) as String
-        val type = data?.get(1) as UserType
+        val email = data?.get(1) as String
+        val type = data?.get(2) as UserType
         val user = User(userId, email, type)
 
 
