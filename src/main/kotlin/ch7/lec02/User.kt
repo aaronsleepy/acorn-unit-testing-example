@@ -46,7 +46,7 @@ class User(
 }
 
 enum class UserType(
-    val value: Int,
+    val code: Int,
 ) {
     CUSTOMER(1),
     EMPLOYEE(2),
