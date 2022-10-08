@@ -9,9 +9,7 @@ class UserController(
     ) {
     fun changeEmail(userId: Int, newEmail: String) {
         val data = _database.getUserById(userId)
-        val email = data?.get(1) as String
-        val type = data?.get(2) as UserType
-        val user = User(userId, email, type)
+        val user = data?.let { UserFactory.create(it) }
 
 
         val companyData = _database.getCompany()
