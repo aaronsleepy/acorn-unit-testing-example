@@ -1,7 +1,7 @@
 package ch7.lec02.refactor02
 
 /**
- * 예제 7.2 애플리케이션 서비스, 버전 1
+ * 예제 7.5 리팩토링 후 컨트롤러
  */
 class UserController(
     private val _database: Database = Database(),
@@ -13,13 +13,11 @@ class UserController(
 
 
         val companyData = _database.getCompany()
-        val companyDomainName = companyData?.get(0) as String
-        val numberOfEmployees = companyData?.get(1) as Int
+        val company = companyData?.let { CompanyFactory.create(it) }
 
-        val newNumberOfEmployees = user.changeEmail(
-            newEmail, companyDomainName, numberOfEmployees)
+        user?.changeEmail(newEmail, company)
 
-        _database.saveCompany(newNumberOfEmployees)
+        _database.saveCompany(company)
         _database.saveUser(user)
         _messageBus.sendEmailChangedMessage(userId, newEmail)
     }

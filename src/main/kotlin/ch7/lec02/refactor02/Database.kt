@@ -9,7 +9,7 @@ class Database {
         return null
     }
 
-    fun saveUser(user: User) {
+    fun saveUser(user: User?) {
 
     }
 
@@ -17,7 +17,7 @@ class Database {
         return null
     }
 
-    fun saveCompany(newNumber: Int) {
+    fun saveCompany(newNumber: Company?) {
 
     }
 }
