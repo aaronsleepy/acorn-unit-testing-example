@@ -2,6 +2,7 @@ package ch7.lec04
 
 /**
  * 예제 7.5 리팩토링 후 컨트롤러
+ * 예제 7.13 도메인 이벤트를 처리하는 컨트롤러
  */
 class UserController(
     private val _database: Database = Database(),
@@ -23,7 +24,11 @@ class UserController(
 
         _database.saveCompany(company)
         _database.saveUser(user)
-        _messageBus.sendEmailChangedMessage(userId, newEmail)
+        // 도메인 이벤트 처리
+        user?.emailChangedEvents?.forEach {
+            _messageBus.sendEmailChangedMessage(it.userId, it.newEmail)
+
+        }
 
         return "OK"
     }

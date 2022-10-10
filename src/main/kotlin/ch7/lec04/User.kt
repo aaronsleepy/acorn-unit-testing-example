@@ -2,6 +2,7 @@ package ch7.lec04
 
 /**
  * 예제 7.7 새 속성이 추가된 User
+ * 예제 7.12 이메일이 변경될 때 이벤트를 추가하는 User
  */
 class User(
     var userId: Int = 0,
@@ -9,6 +10,7 @@ class User(
     var type: UserType = UserType.EMPLOYEE,
     // 새 속성
     var isEmailConfirmed: Boolean = false,
+    val emailChangedEvents: MutableList<EmailChangedEvent> = mutableListOf(),
 ) {
     fun canChangeEmail(): String? {
         if (isEmailConfirmed)
@@ -35,6 +37,8 @@ class User(
 
         email = newEmail
         type = newType
+        // 새 이벤트는 이메일 변경을 나타냄
+        emailChangedEvents.add(EmailChangedEvent(userId, newEmail))
     }
 }
 
