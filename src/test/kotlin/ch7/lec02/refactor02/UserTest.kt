@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 /**
  * 7.3.1 도메인 계층과 유틸리티 코드 테스트하기
  * Test on sut:
- * @see  ch7.lec02.refactor02.Company
+ * @see  User
  */
 class UserTest {
     @Test
