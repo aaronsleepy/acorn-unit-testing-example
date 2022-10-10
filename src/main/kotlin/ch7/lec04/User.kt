@@ -1,14 +1,26 @@
 package ch7.lec04
 
 /**
- * 예제 7.6 리팩터링 후 User
+ * 예제 7.7 새 속성이 추가된 User
  */
 class User(
     var userId: Int = 0,
     var email: String = "",
     var type: UserType = UserType.EMPLOYEE,
+    // 새 속성
+    var isEmailConfirmed: Boolean = false,
 ) {
+    fun canChangeEmail(): String? {
+        if (isEmailConfirmed)
+            return "Can't change email after it's confirmed"
+
+        return null
+
+    }
+
     fun changeEmail(newEmail: String, company: Company?) {
+        assert(canChangeEmail() == null)
+
         if (email == newEmail) {
             return
         }
