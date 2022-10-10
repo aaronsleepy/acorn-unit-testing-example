@@ -38,4 +38,19 @@ class UserTest {
         assertThat(sut.email).isEqualTo("new@gmail.com")
         assertThat(sut.type).isEqualTo(UserType.CUSTOMER)
     }
+
+    @Test
+    fun changing_email_to_the_same_one() {
+        // given-Arrange
+        val company = Company("mycorp.com", 1)
+        val sut = User(1, "user@gmail.com", UserType.CUSTOMER)
+
+        // when-Act
+        sut.changeEmail("user@gmail.com", company)
+
+        // then-Assert
+        assertThat(company.numberOfEmployees).isEqualTo(1)
+        assertThat(sut.email).isEqualTo("user@gmail.com")
+        assertThat(sut.type).isEqualTo(UserType.CUSTOMER)
+    }
 }
