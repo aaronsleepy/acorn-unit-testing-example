@@ -12,7 +12,8 @@ class User(
     fun changeEmail(newEmail: String,
                     companyDomainName: String, numberOfEmployees: Int): Int {
         if (email == newEmail) {
-            return
+//            return
+            return -1
         }
 
         val emailDomain = newEmail.split("@")[1]
