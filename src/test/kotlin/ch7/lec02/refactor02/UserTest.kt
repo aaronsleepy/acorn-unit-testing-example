@@ -23,4 +23,19 @@ class UserTest {
         assertThat(sut.email).isEqualTo("new@mycorp.com")
         assertThat(sut.type).isEqualTo(UserType.EMPLOYEE)
     }
+
+    @Test
+    fun changing_email_from_corporate_to_non_corporate() {
+        // given-Arrange
+        val company = Company("mycorp.com", 1)
+        val sut = User(1, "user@mycorp.com", UserType.EMPLOYEE)
+
+        // when-Act
+        sut.changeEmail("new@gmail.com", company)
+
+        // then-Assert
+        assertThat(company.numberOfEmployees).isEqualTo(0)
+        assertThat(sut.email).isEqualTo("new@gmail.com")
+        assertThat(sut.type).isEqualTo(UserType.CUSTOMER)
+    }
 }
